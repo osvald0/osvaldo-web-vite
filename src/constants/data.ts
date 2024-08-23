@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export const CONTACT_LIST = [
-  { label: "osvaldo.colina@gmail.com", Icon: MdEmail },
-  { label: "osvald0", Icon: FaGithub },
-  { label: "osvald0", Icon: FaLinkedinIn },
+  { key: "email", label: "osvaldo.colina@gmail.com", Icon: MdEmail },
+  { key: "github", label: "osvald0", Icon: FaGithub },
+  { key: "linkedin", label: "osvald0", Icon: FaLinkedinIn },
 ];
 
 export const JOBS_LIST = [
