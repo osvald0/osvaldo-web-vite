@@ -8,10 +8,11 @@ import {
   SKILLS_LIST,
   JOBS_LIST,
 } from "../constants/data";
+import DefaultLayout from "../components/default-layout";
 
 export default function Resume() {
   return (
-    <div className="flex flex-col md:max-w-3xl w-full h-full my-10 px-9 md:px-0 text-neutral-700">
+    <DefaultLayout style="flex flex-col md:max-w-3xl w-full h-full my-10 px-9 md:px-0 text-neutral-700">
       <div className="flex flex-col items-center">
         <p className="text-4xl font-medium">Osvaldo Colina</p>
         <p className="text-lg">Software Engineer</p>
@@ -45,6 +46,6 @@ export default function Resume() {
           <EducationBox key={educationRow.institution} data={educationRow} />
         ))}
       </div>
-    </div>
+    </DefaultLayout>
   );
 }

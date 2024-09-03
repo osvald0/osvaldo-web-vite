@@ -1,6 +1,6 @@
 type Props = {
   text: string;
-}
+};
 
 export default function Chip(props: Props) {
   const { text } = props;
@@ -12,5 +12,5 @@ export default function Chip(props: Props) {
     >
       <p className="text-sm">{text}</p>
     </div>
-  )
+  );
 }

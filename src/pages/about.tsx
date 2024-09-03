@@ -1,6 +1,8 @@
+import DefaultLayout from "../components/default-layout";
+
 export default function About() {
   return (
-    <div className="flex flex-col md:max-w-3xl w-full h-screen justify-center px-8 md:px-0 text-neutral-700">
+    <DefaultLayout style="flex flex-col md:max-w-3xl w-full h-screen justify-center px-8 md:px-0 text-neutral-700">
       <div className="text-xl font-medium mb-4">About me</div>
       <div className="text-sm">
         <p className="mb-3">
@@ -27,6 +29,6 @@ export default function About() {
         </p>
         <p className="mb-3">Let's build something great together!</p>
       </div>
-    </div>
+    </DefaultLayout>
   );
 }
