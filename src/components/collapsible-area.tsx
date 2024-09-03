@@ -33,14 +33,16 @@ export default function CollapsibleArea(props: Props) {
   return (
     <div className={className}>
       <div className="flex flex-row items-center">
-        <p className="text-xl font-bold mr-3">{title}</p>
+        <p className="text-xl font-bold mr-3 whitespace-nowrap">{title}</p>
         {!isOpen && (
-          <p className="text-xs text-neutral-500 mr-3 mt-1">{description}</p>
+          <p className="text-xs text-neutral-500 mr-3 mt-1 whitespace-nowrap">
+            {description}
+          </p>
         )}
         <button
           type="button"
           onClick={handleToggleCollapsible}
-          className="flex flex-row items-center justify-center text-xl w-6 h-6 text-neutral-500 rounded-full hover:bg-neutral-100"
+          className="flex flex-row items-center justify-center text-xl w-6 h-6 text-neutral-500 rounded-full hover:bg-neutral-100 mt-1"
         >
           {isOpen ? <GoChevronUp /> : <GoChevronDown />}
         </button>
