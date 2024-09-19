@@ -9,26 +9,6 @@ export const CONTACT_LIST = [
 
 export const JOBS_LIST = [
   {
-    companyName: "CrowdVolt",
-    role: "Sr. Software Engineer",
-    dateFrom: "June 2024",
-    dateTo: "Present",
-    description: [
-      "Working on the development of the mobile and web client applications.",
-    ],
-    technologies: [
-      "React",
-      "React Native",
-      "Next.js",
-      "Node.js",
-      "Turborepo",
-      "Expo",
-      "Typescript",
-      "Tailwind",
-      "Vercel",
-    ],
-  },
-  {
     companyName: "Freelance (Upwork)",
     role: "Sr. Software Engineer",
     dateFrom: "June 2016",
@@ -50,7 +30,26 @@ export const JOBS_LIST = [
       "and more...",
     ],
   },
-
+  {
+    companyName: "CrowdVolt",
+    role: "Sr. Software Engineer",
+    dateFrom: "June 2024",
+    dateTo: "May 2024",
+    description: [
+      "Working on the development of the mobile and web client applications.",
+    ],
+    technologies: [
+      "React",
+      "React Native",
+      "Next.js",
+      "Node.js",
+      "Turborepo",
+      "Expo",
+      "Typescript",
+      "Tailwind",
+      "Vercel",
+    ],
+  },
   {
     companyName: "Zipdo",
     role: "Sr. Software Engineer",
