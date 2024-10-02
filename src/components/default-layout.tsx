@@ -1,7 +1,7 @@
 import { IoChevronBack } from "react-icons/io5";
-import type { PropsWithChildren } from "react";
-import { cn } from "../helpers/styles";
 import { useNavigate } from "react-router-dom";
+import type { PropsWithChildren } from "react";
+import { cn } from "../utils//styles";
 
 type Props = PropsWithChildren & {
   style: string;

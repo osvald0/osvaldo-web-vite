@@ -15,8 +15,8 @@ export default function Home() {
       <div className="flex flex-row gap-x-4">
         {HOME_NAVIGATION_OPTIONS.map((navItem) => (
           <IconButton
+            id={navItem.key}
             key={navItem.key}
-            iconKey={navItem.key}
             target={navItem.target}
           />
         ))}

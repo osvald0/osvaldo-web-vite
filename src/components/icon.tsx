@@ -20,5 +20,5 @@ const IconsMap = new Map([
 export default function Icon(props: Props) {
   const { iconKey } = props;
   const CurrentIcon = IconsMap.get(iconKey) || BsQuestion;
-  return <CurrentIcon size={24} />;
+  return <CurrentIcon className="pointer-events-none" size={24} />;
 }
