@@ -1,5 +1,5 @@
+import type { UserInput } from "../types/user";
 import { HttpClient } from "./http-client";
-import type { User } from "../types/user";
 
 export default class UserApi {
   private url = "users";
@@ -9,7 +9,7 @@ export default class UserApi {
     this.user = HttpClient.getInstance(this.url);
   }
 
-  create(user: User) {
+  create(user: UserInput) {
     return this.user.post(user);
   }
 }

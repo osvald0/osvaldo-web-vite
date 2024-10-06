@@ -10,7 +10,7 @@ export default function useUser() {
   async function createUser() {
     const newUser = { id: uuid() };
     setCookies("user", JSON.stringify(newUser));
-    // return userApi.create(newUser);
+    await userApi.create(newUser);
     return newUser;
   }
 
