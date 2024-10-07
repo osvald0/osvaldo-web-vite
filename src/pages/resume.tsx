@@ -1,16 +1,25 @@
+import { ResumeVersions, type ResumeVersion } from "../types/resume";
+import DefaultLayout from "../components/default-layout";
 import EducationBox from "../components/education-box";
 import SectionBox from "../components/section-box";
 import SkillRow from "../components/skill-row";
 import JobBox from "../components/job-box";
 import {
   EDUCATIONS_LIST,
+  JOBS_LIST_LONG,
   CONTACT_LIST,
   SKILLS_LIST,
   JOBS_LIST,
 } from "../constants/data";
-import DefaultLayout from "../components/default-layout";
 
-export default function Resume() {
+type Props = {
+  version: ResumeVersion;
+};
+
+export default function Resume(props: Props) {
+  const { version } = props;
+  const jobsList = version === ResumeVersions.LONG ? JOBS_LIST_LONG : JOBS_LIST;
+
   return (
     <DefaultLayout style="flex flex-col md:max-w-3xl w-full h-full my-10 px-9 md:px-0 text-neutral-700">
       <div className="flex flex-col items-center">
@@ -30,7 +39,7 @@ export default function Resume() {
       </div>
       <div className="flex flex-col mt-10">
         <SectionBox title="Experience" />
-        {JOBS_LIST.map((jobItem) => (
+        {jobsList.map((jobItem) => (
           <JobBox key={jobItem.companyName} data={jobItem} />
         ))}
       </div>
