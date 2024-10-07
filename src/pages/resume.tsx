@@ -13,7 +13,7 @@ import {
 } from "../constants/data";
 
 type Props = {
-  version: ResumeVersion;
+  version?: ResumeVersion;
 };
 
 export default function Resume(props: Props) {
