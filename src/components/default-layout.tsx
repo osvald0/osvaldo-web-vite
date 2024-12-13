@@ -15,7 +15,11 @@ export default function DefaultLayout(props: Props) {
     event?: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) {
     event?.stopPropagation();
-    navigate(-1);
+    if (window.history.length > 2) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
   }
 
   return (

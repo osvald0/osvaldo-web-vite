@@ -9,7 +9,7 @@ export const CONTACT_LIST = [
 
 export const JOBS_LIST = [
   {
-    companyName: "Freelance (Upwork)",
+    companyName: "Freelance",
     role: "Sr. Software Engineer",
     dateFrom: "June 2016",
     dateTo: "Present",
@@ -23,7 +23,7 @@ export const JOBS_LIST = [
       "Node.js",
       "Typescript",
       "Tailwind",
-      "PostgresSQL",
+      "PostgreSQL",
       "MySQL",
       "MongoDB",
       "GraphQL",
@@ -69,7 +69,7 @@ export const JOBS_LIST = [
   {
     companyName: "Range Digital",
     role: "Sr. Software Engineer",
-    dateFrom: "Dicember 2020",
+    dateFrom: "December 2020",
     dateTo: "August 2023",
     description: [
       "Led the development of the Range Analytics project, working on both front-end and back-end implementation.",
@@ -120,7 +120,7 @@ export const JOBS_LIST = [
   {
     companyName: "Oracle NetSuite",
     role: "Software Enginner in Test",
-    dateFrom: "Dicember 2016",
+    dateFrom: "December 2016",
     dateTo: "September 2017",
     description: [
       "Designed, developed, and executed automation scripts.",
@@ -141,7 +141,7 @@ export const JOBS_LIST = [
     companyName: "Globant",
     role: "QA Automation Engineer",
     dateFrom: "June 2015",
-    dateTo: "Dicember 2016",
+    dateTo: "December 2016",
     description: [
       "Designed, wrote, and executed manual test cases.",
       "Developed and executed automated tests.",
@@ -152,14 +152,16 @@ export const JOBS_LIST = [
 
 export const JOBS_LIST_LONG = [
   {
-    companyName: "Freelance (Upwork)",
+    companyName: "Freelance",
     role: "Sr. Software Engineer",
     dateFrom: "June 2016",
     dateTo: "Present",
     description: [
-      "Front-end development with React and React Native.",
+      "Front-end development with React.",
       "Back-end development with Node.js.",
+      "Mobile development with React Native.",
       "Successfully delivered 18 projects, building web and mobile applications. ",
+      "Optimized performance and addressed key issues in multiple projects.",
       "Created several development solutions from scratch.",
     ],
     technologies: [
@@ -169,11 +171,43 @@ export const JOBS_LIST_LONG = [
       "Node.js",
       "Typescript",
       "Tailwind",
-      "PostgresSQL",
+      "PostgreSQL",
       "MySQL",
       "MongoDB",
       "GraphQL",
       "and more...",
+    ],
+    projects: [
+      {
+        id: "mathison",
+        name: "Mathison",
+        description:
+          "Mathison is a company that provides an end-to-end platform for advancing workplace diversity, equity, and inclusion (DEI). They offer tools for DEI analytics, talent acquisition, and strategy development, helping organizations build inclusive workplaces and measure progress effectively.",
+        url: "https://www.mathison.io",
+        tasks:
+          "Involved in the project from the ground up, working across front-end and back-end development.",
+        techStack: "React, Node.js, Typescript and PostgreSQL.",
+      },
+      {
+        id: "constant_health",
+        name: "Constant Health",
+        description:
+          "Constant Health is a digital health platform offering personalized weight management solutions through registered dietitian support and cognitive behavioral therapy (CBT).",
+        url: "https://www.constanthealth.ca",
+        tasks: "Contributed to front-end development.",
+        techStack: "React, Node.js and Typescript, Redux.",
+      },
+      {
+        id: "govdocs",
+        name: "GovDocs",
+        description:
+          "GovDocs provides compliance solutions for large organizations, specializing in labor law postings and regulatory updates to help businesses meet federal, state, and local requirements.",
+        url: "https://www.govdocs.com/",
+        tasks:
+          "Contributed to both front-end and back-end development, optimizing front-end performance and establishing automated testing processes to improve code quality.",
+        techStack:
+          "React, Typescript, Redux, Kotlin, AWS Lambda and PostgreSQL.",
+      },
     ],
   },
   {
@@ -182,11 +216,10 @@ export const JOBS_LIST_LONG = [
     dateFrom: "June 2024",
     dateTo: "May 2024",
     description: [
-      "Developed mobile and web client applications.",
       "Built the mobile application from scratch using React Native and Expo.",
       "Resolved issues and improved web application performance.",
       "Designed and implemented a new project architecture.",
-      "Migrated the project to Turborepo.",
+      "Migrated web project to Turborepo.",
     ],
     technologies: [
       "React",
@@ -206,7 +239,7 @@ export const JOBS_LIST_LONG = [
     dateFrom: "September 2023",
     dateTo: "April 2024",
     description: [
-      "Led front-end development projects.",
+      "Led front-end project development.",
       "Resolved issues and enhanced web application performance.",
       "Participated in regular meetings to define the project roadmap.",
     ],
@@ -223,7 +256,7 @@ export const JOBS_LIST_LONG = [
   {
     companyName: "Range Digital",
     role: "Sr. Software Engineer",
-    dateFrom: "Dicember 2020",
+    dateFrom: "December 2020",
     dateTo: "August 2023",
     description: [
       "Led the development of the Range Analytics projects.",
@@ -247,6 +280,40 @@ export const JOBS_LIST_LONG = [
       "Firebase",
       "Shopify",
     ],
+    projects: [
+      {
+        id: "merchology",
+        name: "Merchology",
+        description:
+          "Merchology is a corporate apparel and accessories provider with a strong presence, serving around 500,000 users and supporting 9,000 company stores. They specialize in custom-branded merchandise tailored for corporate clients looking to enhance brand identity through high-quality, personalized products.",
+        url: "https://www.merchology.com/pages/merchstore?srsltid=AfmBOoo1NBS0Xn2EsvBIhsnh9XtJ1BYuQGhHxfvFtapFzETYy8TbT8j5",
+        tasks:
+          "Supported front-end development for the MerchStores project and developed the Inventory Sync project from the ground up.",
+        techStack:
+          "React, Node.js, Typescript, Deno, Fresh, MySQL, MongoDB and Digital Ocean.",
+      },
+      {
+        id: "anchor",
+        name: "Anchor",
+        description:
+          "Anchor, now branded as Spotify for Podcasters, supports around 1.79 million podcasts, holding approximately 55.8% of the podcasting market. Known for its free and easy-to-use tools, Anchor enables independent creators to record, edit, distribute, and monetize podcasts, all integrated within Spotify’s ecosystem, making it a go-to platform for podcasters of all levels​ ",
+        url: "https://podcasters.spotify.com/",
+        tasks:
+          "Integrated Branch.io into the Android and iOS apps to manage deep linking and attribution.",
+        techStack: "Swift, Kotlin",
+      },
+      {
+        id: "range_analytics",
+        name: "Range Analytics",
+        description:
+          "Range Analytics is a multi-platform analytics tool that integrates with Shopify, Meta, Google Analytics, Google Ads, Salesforce, and more. It provides a unified view of sales, marketing, and customer data, helping businesses drive insights and optimize strategies across platforms.",
+        url: "https://www.range-digital.com/range-analytics-pro",
+        tasks:
+          "Led the project from inception, designing and building the database, backend, and app from scratch through to successful publication on the Apple App Store and Google Play Store.",
+        techStack:
+          "React Native, React, Node.js, Typescript, MySQL, Google Cloud.",
+      },
+    ],
   },
   {
     companyName: "The Bot Makers",
@@ -255,8 +322,8 @@ export const JOBS_LIST_LONG = [
     dateTo: "September 2020",
     description: [
       "Created a platform for building chatbots.",
-      "Participated in the process to secure funding from ANII for the platform.",
-      "Developed multiple chatbots and games for Facebook.",
+      "I participated in the process of securing funding for the platform from ANII.",
+      "Developed multiple chatbots and games for Facebook with more than 1.3M users.",
       "Designed and implemented strategies to bring new products to market.",
       "Executed the full software development lifecycle.",
     ],
@@ -277,7 +344,7 @@ export const JOBS_LIST_LONG = [
   {
     companyName: "Oracle NetSuite",
     role: "Software Enginner in Test",
-    dateFrom: "Dicember 2016",
+    dateFrom: "December 2016",
     dateTo: "September 2017",
     description: [
       "Designed, developed, and executed automation scripts.",
@@ -298,7 +365,7 @@ export const JOBS_LIST_LONG = [
     companyName: "Globant",
     role: "QA Automation Engineer",
     dateFrom: "June 2015",
-    dateTo: "Dicember 2016",
+    dateTo: "December 2016",
     description: [
       "Designed, wrote, and executed manual test cases.",
       "Developed and executed automated tests.",
@@ -306,6 +373,7 @@ export const JOBS_LIST_LONG = [
     technologies: ["Java", "MySQL", "Log4j"],
   },
 ];
+
 export const SKILLS_LIST = [
   {
     level: "Advanced",
@@ -352,7 +420,7 @@ export const EDUCATIONS_LIST = [
   },
   {
     institution: "Instituto Tecnológico Superior",
-    degree: "Barchelor in Technology",
+    degree: "Bachelor in Technology",
     dateFrom: "March 2002",
     dateTo: "December 2025",
     description: [

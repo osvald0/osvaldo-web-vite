@@ -1,24 +1,22 @@
-import { ResumeVersions, type ResumeVersion } from "../types/resume";
-import DefaultLayout from "../components/default-layout";
-import EducationBox from "../components/education-box";
-import SectionBox from "../components/section-box";
-import SkillRow from "../components/skill-row";
-import JobBox from "../components/job-box";
 import {
   EDUCATIONS_LIST,
   JOBS_LIST_LONG,
   CONTACT_LIST,
   SKILLS_LIST,
-  JOBS_LIST,
 } from "../constants/data";
+import { ResumeTypes, type ResumeType } from "../types/resume";
+import { useRoutes } from "../hooks/use-routes";
 
-type Props = {
-  version?: ResumeVersion;
-};
+import DefaultLayout from "../components/default-layout";
+import EducationBox from "../components/education-box";
+import SectionBox from "../components/section-box";
+import SkillRow from "../components/skill-row";
+import JobBox from "../components/job-box";
 
-export default function Resume(props: Props) {
-  const { version } = props;
-  const jobsList = version === ResumeVersions.LONG ? JOBS_LIST_LONG : JOBS_LIST;
+export default function Resume() {
+  const { getQueryParam } = useRoutes();
+
+  const resumeType = getQueryParam("type") as ResumeType;
 
   return (
     <DefaultLayout style="flex flex-col md:max-w-3xl w-full h-full my-10 px-9 md:px-0 text-neutral-700">
@@ -39,14 +37,18 @@ export default function Resume(props: Props) {
       </div>
       <div className="flex flex-col mt-10">
         <SectionBox title="Experience" />
-        {jobsList.map((jobItem) => (
-          <JobBox key={jobItem.companyName} data={jobItem} />
+        {JOBS_LIST_LONG.map((jobItem) => (
+          <JobBox
+            data={jobItem}
+            key={jobItem.companyName}
+            showProjects={resumeType === ResumeTypes.DETAILED}
+          />
         ))}
       </div>
       <div className="flex flex-col mt-2">
         <SectionBox title="Skills" />
         {SKILLS_LIST.map((skillRow) => (
-          <SkillRow key={skillRow.level} maxItems={7} data={skillRow} />
+          <SkillRow key={skillRow.level} data={skillRow} maxItems={7} />
         ))}
       </div>
       <div className="flex flex-col mt-8">

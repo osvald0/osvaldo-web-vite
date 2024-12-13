@@ -1,7 +1,7 @@
-export const ResumeVersions = {
+export const ResumeTypes = {
+  DETAILED: "detailed",
   DEFAULT: "default",
   LONG: "long",
 } as const;
 
-export type ResumeVersion =
-  (typeof ResumeVersions)[keyof typeof ResumeVersions];
+export type ResumeType = (typeof ResumeTypes)[keyof typeof ResumeTypes];
